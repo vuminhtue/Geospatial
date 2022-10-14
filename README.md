@@ -1,4 +1,4 @@
-# SMU OIT RDSS Kaggle club
+# SMU Geospatial Analytics courses
 
 ## Maintainer(s)
 
