@@ -1,4 +1,4 @@
-# SMU Geospatial Analytics courses
+# SMU Workshop for Geospatial Analytics 
 
 ## Maintainer(s)
 
