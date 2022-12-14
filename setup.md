@@ -1,7 +1,7 @@
 ---
 title: Setup Platform for Kaggle Competition
 ---
-# 1. Download Kaggle data to M2 directory
+# 1. Setup prior to the workshop
 
 ## 1.1 SMU M2 account request
 
