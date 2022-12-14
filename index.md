@@ -10,10 +10,6 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > - **Email**: tuev@smu.edu
 {: .prereq}
 
-> ## SMU OIT RDSS Kaggle club
-
-
-
 >
 {: .prereq}
 
