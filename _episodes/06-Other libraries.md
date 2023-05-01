@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Learn different ML Supervised Learning with Categorical output"
 keypoints:
-- "Decision Tree, Random Forest"
+- "Folium"
 ---
 
 # 6 Other libraries for Geospatial data analytics
