@@ -83,6 +83,18 @@ os.chdir(os.path.join(et.io.HOME,'earth-analytics'))
 
 ![image](https://user-images.githubusercontent.com/43855029/177871705-c7b9cb10-3c2d-409d-b5c0-ac41865a5c2c.png)
 
+```python
+dem_pre_path = os.path.join("data","colorado-flood",
+                            "spatial",
+                            "boulder-leehill-rd",
+                            "pre-flood",
+                            "lidar",
+                            "pre_DTM.tif")
+
+dtm_pre_arr = rxr.open_rasterio(dem_pre_path)
+dtm_pre_arr
+```
+
 When you open raster data using **xarray** or **rioxarray** you are creating an **_xarray.DataArray_**. The _DataArray_ object stores the:
 
 - raster data in a numpy array format
