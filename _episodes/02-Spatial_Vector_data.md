@@ -243,6 +243,15 @@ for idx, row in CA_Counties.iterrows():
 ```
 ![image](https://user-images.githubusercontent.com/43855029/178071342-674480e0-684f-401c-8413-0396392e9081.png)
 
+We create a new column name ATotal(%) which the total counties area in percentage vs the whole CA State
+
+```python
+Total_Land = CA_Counties['ALAND'].sum()+CA_Counties['AWATER'].sum()
+CA_Counties['ATotal(%)']=(CA_Counties['ALAND']+CA_Counties['AWATER'])/Total_Land*100
+```
+
+Then plot it in Pie Chart:
+
 Plot CA Counties
 ```python
 fig,ax = plt.subplots(figsize=(10,10))
@@ -256,11 +265,6 @@ plt.show()
 
 
 ![image](https://user-images.githubusercontent.com/43855029/178076783-af08beb0-45be-4e35-97ea-47da811b240c.png)
-
-
-
-
-
 
 
 ## 2.6 Plot Multiple Shapefiles Together With Geopandas
