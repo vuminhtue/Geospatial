@@ -238,7 +238,7 @@ CA_Counties.plot(column="NAME",ax=ax)
 ax.set(title="California counties")
 
 for idx, row in CA_Counties.iterrows():
-    plt.annotate(s=row['NAME'], xy=row['coords'],
+    plt.annotate(text=row['NAME'], xy=row['coords'],
                  horizontalalignment='center')
 ```
 ![image](https://user-images.githubusercontent.com/43855029/178071342-674480e0-684f-401c-8413-0396392e9081.png)
