@@ -81,8 +81,6 @@ et.data.get_data("colorado-flood")
 os.chdir(os.path.join(et.io.HOME,'earth-analytics'))
 ```
 
-![image](https://user-images.githubusercontent.com/43855029/177871705-c7b9cb10-3c2d-409d-b5c0-ac41865a5c2c.png)
-
 ```python
 dem_pre_path = os.path.join("data","colorado-flood",
                             "spatial",
@@ -94,6 +92,10 @@ dem_pre_path = os.path.join("data","colorado-flood",
 dtm_pre_arr = rxr.open_rasterio(dem_pre_path)
 dtm_pre_arr
 ```
+
+
+![image](https://user-images.githubusercontent.com/43855029/177871705-c7b9cb10-3c2d-409d-b5c0-ac41865a5c2c.png)
+
 
 When you open raster data using **xarray** or **rioxarray** you are creating an **_xarray.DataArray_**. The _DataArray_ object stores the:
 
@@ -124,11 +126,12 @@ Once you have imported your data, you can plot is using xarray.plot().
 dtm_pre_arr.plot()
 plt.show()
 ```
+
 ![image](https://user-images.githubusercontent.com/43855029/177872105-545e2e5d-2f4f-4e47-a3f7-a6afe31a235e.png)
 
-```
+
 When a plot looks off, it is always a good idea to explore whether nodatavalues exist in your data. Often no data values are very large of negative numbers that are not likely to be valid values in your data. These values will skew any plots (or calculations) in your analysis.
-```
+
 
 The data above should represent terrain model data. However, the range of values is not what is expected. These data are for Boulder, Colorado where the elevation may range from 1000-3000m. There may be some outlier values in the data that may need to be addressed. Below you look at the distribution of pixel values in the data by plotting a histogram.
 
@@ -143,9 +146,8 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/43855029/177872252-d7b6f4fe-5085-4650-8a1b-0a9557a82075.png)
 
-```
+
 Histogram for your lidar DTM. Notice the number of values that are below 0. This suggests that there may be no data values in the data.
-```
 
 Looking at the min and max values of the data, you can see a very small negative number for the minimum. This number matches the nodata value that you looked at above.
 
@@ -353,7 +355,7 @@ plt.show()
 Explore the histogram to see the range of raster values
 
 ```python
-CHR.plot.hist()
+CHM.plot.hist()
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/43855029/178037579-d47cb52c-5bc4-4604-91ad-5b88e2f57c81.png)
