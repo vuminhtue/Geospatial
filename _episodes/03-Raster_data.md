@@ -386,7 +386,7 @@ Using legend:
 
 ```python
 from matplotlib.colors import ListedColormap, BoundaryNorm
-
+import earthpy.plot as ep
 # Create a list of labels to use for your legend
 height_class_labels = ["Short trees",
                        "Medium trees",
